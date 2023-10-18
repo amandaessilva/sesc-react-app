@@ -10,7 +10,7 @@ import { Footer, TaskForm, TaskList } from './components'
 function App() {
 
   const [categories] = useState(dataCategories);
-  const [members] = useState(dataMembers);
+  /**/const [members] = useState(dataMembers);
   const [tasks, setTasks] = useState(dataTasks);
   const [currentTask, setCurrentTask] = useState("");
 
