@@ -3,7 +3,7 @@ import React from 'react';
 import './App.css';
 /*import dataCategories from "./data/data-categories.json"; 
 import dataMembers from "./data/data-members.json"; */
-import dataTasks from "./data/data-tasks.json"; 
+import dataMembers from '../..data/data-members.json';
 import { Footer, TaskForm, TaskList } from './components'
 
 
