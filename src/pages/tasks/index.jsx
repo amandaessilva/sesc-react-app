@@ -1,22 +1,15 @@
 import { useState } from 'react'
-import { Footer, TaskForm, TaskList } from './components'
-//import '../src/excercises/class2'
+import '../../App.css'
+import dataTasks from '../../data/data-tasks.json'
+import { Footer, TaskForm, TasksList } from '../../components'
 
-function App() {
-
-
-  const [tasks, setTasks] = useState(dataTasks);
-/*   const [categories] = useState(dataCategories);
-  const [members] = useState(dataMembers); */
-
+function TasksPage() {
   
-  const addTask = (title, category, member) => {
-    if(!title || !category || !member) {
-      alert ("Todos os campos são obrigatórios");
-      return;
-    }
+  const [tasks, setTasks] = useState(dataTasks);
 
-    const newTask = [
+  const addTask = (title, category, member) => {
+    if(!title || !category || !member) return;
+    const newTaskArray = [
       ...tasks,
       {
         id: Math.floor(Math.random() * 10000),
@@ -25,21 +18,14 @@ function App() {
         member,
         status: "todo"
       }
-    ]
-
-    setTasks(newTask);
-  }
-
-  const deleteTask = (id) => {
-    const newTasks = [...tasks];
-    const filteredTasks = newTasks.filter(task => task.id !== id ? task : null)
-    setTasks(filteredTasks);
+    ];
+    setTasks(newTaskArray);
   }
 
   const startTask = (id) => {
     const newTasks = [...tasks];
     newTasks.map((task) => 
-      task.id === id ? (task.status = 'todo') : task
+      task.id === id ? (task.status = 'doing') : task
     );
     setTasks(newTasks);
   }
@@ -52,19 +38,24 @@ function App() {
     setTasks(newTasks);
   }
 
+  const deleteTask = (id) => {
+    const newTasks = [...tasks];
+    const filteredTasks = newTasks.filter(task => task.id !== id ? task : null);
+    setTasks(filteredTasks);
+  }
+
   return (
     <div>
       <TaskForm addTask={addTask} />
-      <TaskList
+      <TasksList 
         tasks={tasks}
-        deleteTask={deleteTask}
         startTask={startTask}
         closeTask={closeTask}
+        deleteTask={deleteTask}
       />
       <Footer />
-      
     </div>
   )
 }
 
-export default App
+export default TasksPage

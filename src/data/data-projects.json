@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "title": "Landing Page Usina",
+        "description": "",
+        "startDate": "2023/10/15",
+        "deadline": "",
+        "endDate": "",
+        "client": "Usina Itaipu",
+        "status": "todo",
+        "idTeam": "2"
+
+    },
+    {
+        "id": 2,
+        "title": "Sistemas de Permutas",
+        "description": "",
+        "startDate": "2023/10/15",
+        "deadline": "",
+        "endDate": "",
+        "client": "Fama",
+        "status": "done",
+        "idTeam": "1"
+
+    },
+    {
+        "id": 3,
+        "title": "Landing Page Usina",
+        "description": "",
+        "startDate": "2023/10/15",
+        "deadline": "",
+        "endDate": "",
+        "client": "Usina Itaipu",
+        "status": "todo",
+        "idTeam": "2"
+
+    }
+]
