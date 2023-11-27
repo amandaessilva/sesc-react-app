@@ -1,0 +1,16 @@
+const deleteTask = (id) => {
+	alert ('Excluir tarefa com ID' + id);
+}
+
+
+
+
+loop
+
+const startTask = (id) => {
+	const newTasks = [...tasks];
+	newTasks.map((task) =>
+		task.id === id ? (task.status = 'doing') : task
+	);
+	setTasks(newTasks);
+}
