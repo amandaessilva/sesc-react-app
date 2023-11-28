@@ -1,62 +1,16 @@
-/*html, body {
-  padding: 0;
-  margin: 0;
+* {
   font-family: Arial, Helvetica, sans-serif;
-  background-color: rgb(169, 93, 165);
-  color: #c76dc1;
 }
-
-h1{
-  color: #ad6fc5;
-  text-align: center;
-  font-size: 2em;
-
-}
-label {
-  font-size: 0.725em;
-  color: #302675;
-  font-weight: bold;
-}
-
-hr{
-  border: 0;
-  border-top: solid 1px #e6e6e6;
-  margin: 20px opx;
-}
-
-input, select {
-  width: 100%;
-  box-sizing: border-box;
-  padding: 12px 10px;
-  margin: 10px 0px;
-  border: solid 1px #e6e6e6;
-  border-radius: 10px;
-}
-
-.section-main{
-
-}
-
-/*#title{
-  background-color: #ff0000;
-}
-*/
-/*
-.container-card{
-  max-width: 720px;
-  margin: 0 auto;
-  padding: 40px;
-  background-color: #fff;
-  border-radius: 20px;
-}
----*/
 
 body, html {
   padding: 0;
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: #813790;
+  background-color: #0f0934;
   color: #333;
+}
+
+li {
+  color: #FFF
 }
 
 h1 {
@@ -90,7 +44,7 @@ hr {
   margin: 20px 0px;
 }
 
-input, select {
+input, select, textarea {
   width: 100%;
   box-sizing: border-box;
   padding: 12px 10px;
@@ -183,7 +137,7 @@ input, select {
 }
 
 .btn-register:hover {
-  background-color: #70c4fc;
+  background-color: #1eff00;
 }
 
 .btn-start {
@@ -201,6 +155,7 @@ input, select {
   color: #302675;
   border: solid 1.5px #302675;
   background-color: transparent;
+  text-decoration: none;
 }
 
 .btn-close:hover {
@@ -218,12 +173,4 @@ input, select {
 .btn-delete:hover {
   color: #FFFFFF;
   background-color: #f86484;
-}
-
-.footer-main {
-  width: 100%;
-  margin-top: 40px;
-  padding: 20px;
-  background-color: #FFFFFF;
-  text-align: center;
 }

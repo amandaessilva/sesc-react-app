@@ -1,17 +1,18 @@
 import {
-    Card,
-    CardContent,
-    CardMedia,
-    Container,
-    Grid,
-    Typography,
-    CardActions,
-  } from "@mui/material";
-  
-  import { Link } from "react-router-dom";
-  
-  function HomePage() {
-    return (
+  Card,
+  CardActions,
+  CardContent,
+  CardMedia,
+  Container,
+  Grid,
+  Typography,
+} from "@mui/material";
+import { Link } from "react-router-dom";
+import { Footer } from "../../components";
+
+function HomePage() {
+  return (
+    <>
       <Container
         maxWidth="md"
         sx={{
@@ -21,37 +22,27 @@ import {
         <Grid
           container
           direction="row"
-          justifyContent="center"
+          justifyContent="flex-start"
           alignItems="flex-start"
           spacing={2}
         >
           <Grid item lg={12}>
             <Card>
-              <Typography
-                variant="h1"
-                fontSize={30}
-                padding={3}
-              >
-                Introdução ao Desenvolvimento
-                Front-end com React
+              <Typography variant="h1" fontSize={30} padding={3}>
+                Introdução ao Desenvolvimento Front-end com React
               </Typography>
             </Card>
           </Grid>
-          <Grid 
-          item 
-          lg={4}
-          >
+          <Grid item lg={4}>
             <Card>
               <CardMedia
                 sx={{ height: 140 }}
-                image="https://picsum.photos/id/1/200/300"
-                title="Bem-vindo"
+                image="https://picsum.photos/id/1/600/600"
+                title="O Curso"
               />
               <CardContent>
-                <Typography variant="h5">
-                  Nosso curso
-                </Typography>
-                <Typography variant="body2" color="text.secondary">
+                <Typography variant="h5">Nosso curso</Typography>
+                <Typography variant="body2">
                   Este curso convida diferentes públicos a experimentarem o React,
                   uma das bibliotecas JavaScript mais utilizadas na atualidade.
                   Durante as aulas, vamos explorar o potencial da criação de
@@ -60,15 +51,17 @@ import {
                   APIs.
                 </Typography>
               </CardContent>
-              <CardActions>
+              <CardActions
                 sx={{
-                  display: 'flex',
-                  justifyContent:'center',
-                  paddingBottom: 4
+                  display: "flex",
+                  justifyContent: "center",
+                  paddingBottom: 4,
                 }}
+              >
                 <Link
-                  to='https://github.com/amandaessilva/sesc-react-app'
                   className="btn-close"
+                  to="https://github.com/andersonstudioa/sesc-react-app"
+                  target="_blank"
                 >
                   Repositório
                 </Link>
@@ -79,14 +72,12 @@ import {
             <Card>
               <CardMedia
                 sx={{ height: 140 }}
-                image="https://picsum.photos/id/3/200/300"
-                title="Bem-vindo"
+                image="https://picsum.photos/id/2/600/600"
+                title="O Curso"
               />
               <CardContent>
-                <Typography gutterBottom variant="h5" component="div">
-                  Projetos
-                </Typography>
-                <Typography variant="body2" color="text.secondary">
+                <Typography variant="h5">Projetos</Typography>
+                <Typography variant="body2">
                   Um projeto em negócio e ciência é normalmente definido como um
                   empreendimento, frequentemente envolvendo pesquisa ou desenho,
                   que tem como objetivo alcançar um resultado exclusivo. Em geral
@@ -97,14 +88,14 @@ import {
               </CardContent>
               <CardActions
                 sx={{
-                  display: 'flex',
-                  justifyContent: 'center',
-                  paddingBottom: 4
+                  display: "flex",
+                  justifyContent: "center",
+                  paddingBottom: 4,
                 }}
               >
                 <Link
-                  to='/projects'
                   className="btn-close"
+                  to="/projects"
                 >
                   Gerenciar Projetos
                 </Link>
@@ -115,14 +106,12 @@ import {
             <Card>
               <CardMedia
                 sx={{ height: 140 }}
-                image="https://picsum.photos/id/4/200/300"
-                title="Bem-vindo"
+                image="https://picsum.photos/id/3/600/600"
+                title="O Curso"
               />
               <CardContent>
-                <Typography gutterBottom variant="h5" component="div">
-                  Tarefas
-                </Typography>
-                <Typography variant="body2" color="text.secondary">
+                <Typography variant="h5">Tarefas</Typography>
+                <Typography variant="body2">
                   Em gerenciamento de projetos, uma tarefa é uma atividade que
                   precisa ser realizada dentro de um período de tempo definido ou
                   por um prazo. Uma tarefa pode ser dividida em atribuições que
@@ -132,23 +121,26 @@ import {
               </CardContent>
               <CardActions
                 sx={{
-                  display: 'flex',
-                  justifyContent: 'center',
-                  paddingBottom: 4
+                  display: "flex",
+                  justifyContent: "center",
+                  paddingBottom: 4,
                 }}
               >
                 <Link
-                  to='/tasks'
                   className="btn-close"
+                  to="/tasks"
                 >
                   Gerenciar Tarefas
                 </Link>
               </CardActions>
             </Card>
           </Grid>
+          
         </Grid>
       </Container>
-    );
-  }
-  
-  export default HomePage;
+      <Footer />
+    </>
+  );
+}
+
+export default HomePage;
