@@ -1,44 +1,44 @@
 [
-    {
-      "id": 1,
-      "name": "Amanda Silva",
-      "profile": "amandaessilva",
-      "idTeam": 2
-    },
-    {
-      "id": 2,
-      "name": "Leandro Lázaro Firmino de Carvalho",
-      "profile": "leufmt",
-      "idTeam": 4
-    },
-    {
-      "id": 4,
-      "name": "Caio Felipe",
-      "profile": "caiofelipeba",
-      "idTeam": 8
-    },
-    {
-      "id": 5,
-      "name": "Alisson Cavalcanti",
-      "profile": "alissoncavalcanti",
-      "idTeam": 6
-    },
-    {
-      "id": 6,
-      "name": "Luciano Mendonca",
-      "profile": "",
-      "idTeam": 3
-    },
-    {
-      "id": 7,
-      "name": "Sérgio Roberto Sanchez Filho",
-      "profile": "SergioRSanchez",
-      "idTeam": 6
-    },
-    {
-      "id": 9,
-      "name": "Marcelo S Teles",
-      "profile": "binskk",
-      "idTeam": 1
-    }
-  ]
+  {
+    "id": 1,
+    "name": "Amanda Silva",
+    "profile": "amandaessilva",
+    "idTeam": 2
+  },
+  {
+    "id": 2,
+    "name": "Leandro Lázaro Firmino de Carvalho",
+    "profile": "leufmt",
+    "idTeam": 4
+  },
+  {
+    "id": 4,
+    "name": "Caio Felipe",
+    "profile": "caiofelipeba",
+    "idTeam": 8
+  },
+  {
+    "id": 5,
+    "name": "Alisson Cavalcanti",
+    "profile": "alissoncavalcanti",
+    "idTeam": 6
+  },
+  {
+    "id": 6,
+    "name": "Luciano Mendonca",
+    "profile": "",
+    "idTeam": 3
+  },
+  {
+    "id": 7,
+    "name": "Sérgio Roberto Sanchez Filho",
+    "profile": "SergioRSanchez",
+    "idTeam": 6
+  },
+  {
+    "id": 9,
+    "name": "Marcelo S Teles",
+    "profile": "binskk",
+    "idTeam": 1
+  }
+]
