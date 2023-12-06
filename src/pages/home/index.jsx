@@ -1,3 +1,4 @@
+import { useContext } from "react";
 import {
   Card,
   CardActions,
@@ -9,8 +10,11 @@ import {
 } from "@mui/material";
 import { Link } from "react-router-dom";
 import { Footer } from "../../components";
+import { TaskContext } from "../../context/task-context";
 
 function HomePage() {
+
+  const {message} = useContext(TaskContext);
   return (
     <>
       <Container
