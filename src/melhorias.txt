@@ -1,6 +1,8 @@
 no postman cria o banco para a aplicação
 
-elaboracao de estruturas para api, cria a pasta api, passa os dados por meio do arquivo ????
+publica no vercel.com
+
+elaboracao de estruturas para api, cria a pasta api, passa os dados por meio do arquivo .env
 alteração dos componentes para "conversar" com a API, altera nomenclaturas entre outros
 
 funcionalidade dos botoes Status, Finalizar e Deletar
@@ -11,3 +13,9 @@ data     status:"doing"
 
 
 verificar como compartilhar dados com o postegress
+
+
+colocar no MATERIAL a pagina de task
+
+colocar o back no projeto e na home
+
