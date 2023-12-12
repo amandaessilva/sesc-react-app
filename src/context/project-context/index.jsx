@@ -1,13 +1,13 @@
-import { createContext, useState } from "react";
+import { createContext, useState } from "react"
+import { format } from 'date-fns'
 import dataProjects from "../../data/data-projects.json"
-import { format } from "date-fns";
 
 
 export const ProjectContext = createContext({});
 
 export const ProjectProvider = ({children}) => {
-
-    const [projects, setProjects] = useState(dataProjects);
+  const [projects, setProjects] = useState(dataProjects);
+  const [edit, setEdit] = useState(false);
 
   const addProject = (
     title,
@@ -34,8 +34,6 @@ export const ProjectProvider = ({children}) => {
         status: "todo"
       }
     ];
-
-    console.log('newProjectsArray', newProjectsArray);
     setProjects(newProjectsArray);
   }
 
@@ -44,10 +42,28 @@ export const ProjectProvider = ({children}) => {
     const filteredProjects = newProjects.filter(project => project.id !== id ? project : null);
     setProjects(filteredProjects);
   }
-  return(
-    <ProjectContext.Provider value={{ projects, addProject, deleteProject }}>
-        {children}
-    </ProjectContext.Provider>
-);
 
+  const editProject = (id) => {
+    setEdit(true)
+    const newProjects = [...projects];
+    const filteredProjects = newProjects.filter(project => project.id !== id ? project : null);
+    setProjects({
+      id: Math.floor(Math.random() * 10000),
+      title,
+      description,
+      startDate: startDate ? format(startDate, 'yyyy/MM/dd') : '',
+      deadline: deadline ? format(deadline, 'yyyy/MM/dd') : '',
+      endDate: endDate ? format(endDate, 'yyyy/MM/dd') : '',
+      client,
+      idTeam,
+      status: "todo"
+    });
   }
+
+  return(
+    <ProjectContext.Provider value={{ projects, addProject, deleteProject, editProject, edit }}>
+      {children}
+    </ProjectContext.Provider>
+  );
+}
+
