@@ -1,1 +1,13 @@
+no postman cria o banco para a aplicação
 
+elaboracao de estruturas para api, cria a pasta api, passa os dados por meio do arquivo ????
+alteração dos componentes para "conversar" com a API, altera nomenclaturas entre outros
+
+funcionalidade dos botoes Status, Finalizar e Deletar
+
+Delete-task inicia no postman
+
+data     status:"doing"
+
+
+verificar como compartilhar dados com o postegress
